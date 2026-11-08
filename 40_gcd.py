@@ -1,0 +1,12 @@
+def gcd(a, b):
+    a = abs(a)
+    b = abs(b)
+
+    while b:
+        a, b = b, a % b
+
+    return a
+
+
+if __name__ == "__main__":
+    print(gcd(48, 18))
